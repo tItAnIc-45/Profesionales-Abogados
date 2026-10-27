@@ -1,0 +1,33 @@
+.form-reset {
+    margin: 0;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+}
+.contact-info-card {
+    background: var(--bg-card);
+    border-left: 4px solid var(--accent-gold);
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0 8px 8px 0;
+}
+.contact-info-card h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--accent-gold);
+}
+.contact-info-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+.map-container {
+    margin-top: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}

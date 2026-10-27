@@ -1,19 +1,48 @@
-# React + Vite
+# TuPlus Abogados — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Migración a React con Vite conservando el HTML, CSS, contenido y comportamiento de la página original.
 
-Currently, two official plugins are available:
+## Requisitos
+- Node.js 18 o superior
+- npm
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Ejecutar en local
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Compilar para producción
+```bash
+npm run build
+npm run preview
+```
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Estructura
+```text
+tuplus-abogados/
+├── public/
+│   └── assets/
+│       └── colibri.png
+├── src/
+│   ├── components/
+│   │   └── LegacyPage.jsx
+│   ├── legacy/
+│   │   ├── pageMarkup.js
+│   │   ├── main.js
+│   │   └── calculator.js
+│   ├── styles.css
+│   ├── la-firma.css
+│   ├── nosotros.css
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notas
+- Los estilos originales se mantienen separados por responsabilidad.
+- Las funciones originales de tema, idioma, modales, scroll y cotizador se conservan.
+- El marcado de la página se mantiene en `src/legacy/pageMarkup.js` para evitar cambios visuales durante la migración y conservar sus IDs y atributos. `LegacyPage.jsx` lo monta dentro de React; se puede extraer por secciones a componentes JSX en una siguiente etapa sin alterar el diseño.
+- La URL de Formspree y los enlaces externos originales se mantienen como estaban. Revisa esos valores antes de publicar.

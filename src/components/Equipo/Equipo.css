@@ -1,0 +1,117 @@
+.btn-detalles-abogado {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-detalles-abogado:hover {
+    background: #B8860B;
+    transform: scale(1.1);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.team-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.15);
+}
+
+.team-img-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    overflow: hidden;
+    border-bottom: 3px solid var(--accent-gold);
+    transition: border-color 0.3s ease;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    filter: brightness(0.95);
+}
+
+.team-card:hover .team-img {
+    transform: scale(1.06);
+    filter: brightness(1.05);
+}
+
+.team-info {
+    padding: 1.8rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-role {
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.team-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+}
+
+.team-email-badge {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    word-break: break-all;
+}
+
+.team-contact {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.team-contact a {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.team-contact a:hover {
+    color: var(--accent-gold);
+}

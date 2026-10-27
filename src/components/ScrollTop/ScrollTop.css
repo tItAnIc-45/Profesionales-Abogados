@@ -1,0 +1,31 @@
+.btn-scroll-top-left {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-scroll-top-left.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-scroll-top-left:hover {
+    background: #B8860B;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,37 @@
+.calc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.calc-result {
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-gold);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.calc-result-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.calc-amount {
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    color: var(--accent-gold);
+    margin: 1rem 0;
+}
+
+.calc-disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
