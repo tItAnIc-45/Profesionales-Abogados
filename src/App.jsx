@@ -15,7 +15,8 @@ import Perfil from './components/Perfil/Perfil';
 import ScrollTop from './components/ScrollTop/ScrollTop';
 import './scripts/main.js';
 import './scripts/calculator.js';
-/* PREUEBA DE EQUIPOOOOOO*/
+/* PREUEBA DE EQUIPOOOOOO
+holaaaaaaaaaaaaaaa*/
 export default function App() {
   useEffect(() => {
     document.documentElement.lang = 'es';
