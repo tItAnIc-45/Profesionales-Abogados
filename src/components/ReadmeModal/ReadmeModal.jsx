@@ -11,8 +11,8 @@ const readmeModalMarkup = `<div class="modal" id="readmeModal">
 <li><strong>Modo Oscuro y Claro:</strong> Alternancia instantánea con persistencia.</li>
 <li><strong>Soporte Multiidioma (Español / Inglés):</strong> Traducción dinámica de textos clave.</li>
 <li><strong>Mapa de Ubicación:</strong> Incorporado en la sección de contacto.</li>
-<li><strong>Perfiles Dinámicos:</strong> Imágenes con bordes dorados y animación sutil al pasar el cursor, incluyendo correo falso institucional.</li>
-<li><strong>Formulario Formspree:</strong> Conectado a \`https://formspree.io/f/mnppjqll\`.</li>
+<li><strong>Perfiles Dinámicos:</strong> Imágenes con bordes dorados y animación sutil al pasar el cursor.</li>
+<li><strong>Formulario Formspree:</strong> Configurado mediante variable de entorno.</li>
 </ul>
 <div class="text-right mt-3">
 <button class="btn-gold" onclick="closeModal('readmeModal')">Entendido</button>
